@@ -16850,6 +16850,7 @@ ul li {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+     height: 100%;
 }
 
 /* swiper default styles */
