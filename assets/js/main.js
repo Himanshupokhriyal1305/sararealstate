@@ -1,31 +1,7 @@
 (function ($) {
     "use strict";
     
-    /*----------------------------------------
-	   Sticky Menu Activation
-	------------------------------------------*/
-
-	$(window).on('scroll', function () {
-		if ($(this).scrollTop() > 0) {
-			$('.header-sticky').addClass('sticky');
-		} else {
-			$('.header-sticky').removeClass('sticky');
-		}
-	});
-	/*-----------------------------------------
-		Off Canvas Mobile Menu
-	-------------------------------------------*/
-
-	$(".mobile-menu-hamburger").on('click', function () {
-		$("body").addClass('fix');
-		$(".mobile-menu-wrapper").addClass('open');
-	});
-
-	$(".offcanvas-btn-close,.offcanvas-overlay").on('click', function () {
-		$("body").removeClass('fix');
-		$(".mobile-menu-wrapper").removeClass('open');
-	});
-	
+ 
 	/*----------------------------------------
 		Responsive Mobile Menu
 	------------------------------------------*/

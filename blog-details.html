@@ -50,151 +50,133 @@
     -->
 </head>
 
+<style>
+    /* Slide from right (optional enhancement) */
+    @media (max-width: 991px) {
+        .navbar-collapse {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 0 0 0 0;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-open {
+            border-top: 15px !important;
+        }
+
+    
+    }
+</style>
+
 <body>
     <!-- Header Section Start -->
-    <div class="header header-transparent-bg section-fluid">
+    <!-- Container for glass navbar -->
+    <div class="container-fluid d-flex justify-content-center">
+        <nav id="mainNavbar"
+            class="navbar navbar-expand-lg bg-white bg-opacity-75 rounded-pill shadow-sm my-3 px-4 transition-all"
+            style="backdrop-filter: blur(10px); width: 90%; margin: 0 auto; position: fixed; z-index: 999;">
+            <div class="container-fluid">
 
-        <!-- Header Wrapper Start -->
-        <div class="header-wrapper">
-            <div class="header-sticky">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                    <img src="assets/images/logo/Screenshot_2025-07-07_110143-removebg-preview.png" alt="Logo"
+                        style="height: 70px;" class="me-2" />
+                </a>
 
-                        <div class="col-lg-2 col-md-3 col-6">
-                            <!-- Header Logo Start -->
-                            <div class="header-logo">
-                                <a href="index.html">
-                                    <img class="fit-image" src="assets/images/logo/Saras Realty.png" alt="Header Logo">
-                                </a>
-                            </div>
-                            <!-- Header Logo End -->
+                <!-- Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                        </div>
+                <!-- Navbar Items -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- Center Menu -->
+                    <ul class="navbar-nav mb-2 mb-lg-0 gap-3 p-3 mx-lg-auto text-start text-lg-start">
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold text-dark" href="./index.html">Home</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link fw-semibold text-dark" href="./project.html">Project</a>
+                        </li>
 
-                        <div class="col-lg-8 col-md-7 d-none d-md-block">
 
-                            <!-- Main Menu Language Wrapper Start -->
-                            <div class="main-menu-language-wrapper">
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold text-dark" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold text-dark" href="./blog.html">Blog</a>
+                        </li>
 
-                                <!-- Main Menu Start -->
-                                <nav class="main-menu main-menu-white">
-                                    <ul>
-                                        <li>
-                                            <a class="active" href="index.html">Home</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Project</a>
-                                            <ul class="submenu">
-                                                <li><a href="project.html">Project</a></li>
-                                                <li><a href="project-details.html">Project Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#">Blog</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="about.html">About</a>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html">Contact</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                                <!-- Main Menu End -->
 
-                                <!-- Language Start -->
-                                <div class="language language-white d-md-none d-lg-flex">
-                                    <a href="#">Eng</a>
-                                    <a href="#"> <span>Fra</span></a>
-                                </div>
-                                <!-- Language End -->
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold text-dark" href="#">Service</a>
+                        </li>
 
-                            </div>
-                            <!-- Main Menu Language Wrapper End -->
+                        <!-- Contact Button (Mobile only) -->
+                        <li class="d-block d-lg-none">
+                            <a href="./contact.html" class="btn btn-danger rounded-pill fw-bold px-4 py-2">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
 
-                        </div>
-
-                        <div class="col-lg-2 col-md-2 col-6">
-
-                            <!-- Mobile Menu Hamburger Start -->
-                            <div class="mobile-menu-hamburger mobile-menu-hamburger-white">
-                                <a href="javascript:void(0)">
-                                    <span>Menu</span>
-                                    <i class="icon ion-android-menu"></i>
-                                </a>
-                            </div>
-                            <!-- Mobile Menu Hamburger End -->
-
-                        </div>
-
+                    <!-- Contact Button (Right on Desktop) -->
+                    <div class="d-none d-lg-block">
+                        <a href="contact.html" class="btn btn-danger rounded-pill fw-bold px-4 py-2 ms-auto">
+                            Contact Us
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Header Top End -->
-
-        <!-- Mobile Menu Start -->
-        <div class="mobile-menu-wrapper">
-            <div class="offcanvas-overlay"></div>
-
-            <!-- Mobile Menu Inner Start -->
-            <div class="mobile-menu-inner">
-                <!-- Mobile Menu Inner Top Start -->
-                <div class="mobile-menu-inner-top">
-
-                    <!-- Mobile Menu Logo Start  -->
-                    <div class="logo-mobile">
-                        <img src="assets/images/logo/Saras Realty black.jpg" width="180px" alt="Logo">
-                    </div>
-                    <!-- Mobile Menu Logo End -->
-
-                    <!-- Button Close Start -->
-                    <div class="offcanvas-btn-close">
-                        <i class="icofont-close-line"></i>
-                    </div>
-                    <!-- Button Close End -->
-
-                </div>
-                <!-- Mobile Menu Inner Top End -->
-
-                <!-- Mobile Menu Start -->
-                <div class="mobile-navigation">
-                    <nav>
-                        <ul class="mobile-menu">
-                            <li class="has-children">
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li class="has-children">
-                                <a href="#">Project <i class="icofont-rounded-down" aria-hidden="true"></i></a>
-                                <ul class="dropdown">
-                                    <li><a href="project.html">Project</a></li>
-                                    <li><a href="project-details.html">Project Details</a></li>
-                                </ul>
-                            </li>
-                            <li class="has-children">
-                                <a href="#">Blog <i class="icofont-rounded-down" aria-hidden="true"></i></a>
-                                <ul class="dropdown">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- Mobile Menu End -->
-            </div>
-            <!-- Mobile Menu Inner End -->
-        </div>
-        <!-- Mobile Menu End -->
-
+        </nav>
     </div>
-    <!-- Header Section End -->
+   
+  
+
+
+    <!-- Optional JS to toggle class -->
+    <script>
+        const navbar = document.getElementById('mainNavbar');
+        const collapse = document.getElementById('navbarContent');
+
+        // On menu open (mobile)
+        collapse.addEventListener('show.bs.collapse', function () {
+            navbar.classList.remove('rounded-pill');
+            navbar.classList.add('mobile-menu-open');
+        });
+
+        // On menu close
+        collapse.addEventListener('hide.bs.collapse', function () {
+            navbar.classList.add('rounded-pill');
+            navbar.classList.remove('mobile-menu-open');
+        });
+
+        // Handle resize to reapply rounded-pill on desktop
+        function handleResize() {
+            if (window.innerWidth >= 992) {
+                // Always show rounded on desktop
+                navbar.classList.add('rounded-pill');
+                navbar.classList.remove('mobile-menu-open');
+            } else {
+                // Remove rounded on mobile if menu is open
+                if (collapse.classList.contains('show')) {
+                    navbar.classList.remove('rounded-pill');
+                    navbar.classList.add('mobile-menu-open');
+                }
+            }
+        }
+
+        // Attach resize handler
+        window.addEventListener('resize', handleResize);
+        window.addEventListener('DOMContentLoaded', handleResize);
+    </script>
+
+
 
     <!-- Project Banner Section Start -->
     <div class="section">
@@ -484,7 +466,7 @@
                             href="tel:+012-345-6789-00"><i class="fa-solid fa-phone-volume"></i>
                             +91 9811021105,
                             +91 9811021104</a> <br> <a href="mailto:hello@consulte.co"><i
-                                class="fa-regular fa-envelope"></i> sarasrealty@gmail.como</a></div>
+                                class="fa-regular fa-envelope"></i> sarasrealty@gmail.com</a></div>
                     <!-- Contact Info End -->
 
                     <!-- Footer Social Icons Start -->

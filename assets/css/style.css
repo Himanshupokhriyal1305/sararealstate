@@ -17064,57 +17064,7 @@ ul li {
 /*----------------------------------------*/
 /*  02. Header CSS
 /*----------------------------------------*/
-/*-- Header Transparent Bg --*/
-.header-transparent-bg {
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-  background: transparent;
-}
-@media only screen and (max-width: 767px) {
-  .header-transparent-bg {
-    border-bottom: 1px solid #E6E6E6;
-  }
-}
-.header-transparent-bg .header-wrapper {
-  min-height: 100%;
-}
 
-/*-- Header Wrapper --*/
-.header-wrapper {
-  min-height: 130px;
-}
-@media only screen and (max-width: 767px) {
-  .header-wrapper {
-    min-height: 97px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  .header-wrapper {
-    min-height: 78px;
-  }
-}
-
-/*-- Header Logo --*/
-.header-logo img {
-  width: 160px;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .header-logo img {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .header-logo img {
-    width: 150px;
-    padding: 25px 0;
-  }
-}
-@media only screen and (max-width: 479px) {
-  .header-logo img {
-    width: 120px;
-  }
-}
 
 /*-- Main Menu & Language style --*/
 .main-menu-language-wrapper {
